@@ -51,7 +51,6 @@ const content = `
     </ul>
   
 `;
-
 const main = document.querySelector(".maincontent");
 
 const newArticle = document.createElement("article");
@@ -60,3 +59,21 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+const navbar=`
+        <ul class="nav-bar">
+          <li class="nav-li"><a href="#">Main</a></li>
+          <li class="nav-li"><a href="#">Main</a></li>
+          <li class="nav-li"><a href="#">Main</a></li>
+        </ul>
+`;
+
+
+
+const navBar= document.createElement("nav");
+navBar.innerHTML=navbar;
+
+document.querySelector(".siteheader").append(navBar);
+
+
+

@@ -33,6 +33,24 @@ const frogpack = {
   },
 };
 
+
+//main function
+const newArticle = () => {
+  const newArticlee= document.createElement("article");
+  newArticlee.innerHTML= content;
+  newArticlee.prepend(imageFunc(frogpack));
+  return newArticlee;
+};
+
+//helper function
+const imageFunc = (frogpack) => {
+  const figEl=document.createElement("figure");
+  figEl.innerHTML=`
+    <image src=${frogpack.image} alt="frog" style="width:20%"></image>
+    <figcaption>This is an image of a frog</figcaption>
+  `;
+  return figEl;
+};
 // Baseline HTML output
 const content = `
     <h1 class="backpack__name">${frogpack.name}</h1>
@@ -57,3 +75,5 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+document.querySelector("main").append(newArticle());

@@ -146,3 +146,23 @@ figure {
   background: black;
   color: white;
 }
+
+
+.nav-bar ul{
+  margin: 0;
+  padding: 3rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav-li a {
+  display: block;
+  padding: .5rem 1rem;
+  color: inherit;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-li a:hover {
+  color: blue;
+}
